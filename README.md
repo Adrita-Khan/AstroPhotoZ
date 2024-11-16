@@ -6,7 +6,7 @@
 
 ## Project Overview
 
-This project focuses on estimating photometric redshifts, which are crucial for studying the large-scale structure of the universe and the distribution of galaxies. It employs Gaussian processes as a flexible non-parametric approach to effectively model uncertainties in photometric data. The project also integrates various data analysis techniques to enhance accuracy and performance, offering a comprehensive framework for photometric redshift estimation.
+This project focuses on estimating photometric redshifts, which are crucial for studying the large-scale structure of the universe and the distribution of galaxies. It employs Gaussian processes as a flexible non-parametric approach to effectively model uncertainties in photometric data. The project also integrates various data analysis techniques to enhance accuracy and performance, offering a comprehensive framework for photometric redshift estimation and other ML and AI methods, benchmarking between them to observe each method's performance in terms of accuracy and computational time.
 
 ## Features
 
@@ -15,6 +15,7 @@ This project focuses on estimating photometric redshifts, which are crucial for 
 - **Advanced Data Analysis**: Combines Gaussian processes with other statistical and machine learning techniques to enhance predictive power.
 - **Visualization Tools**: Includes tools for visualizing redshift distributions, error margins, and overall model performance.
 - **Thorough Documentation**: Detailed explanations and example notebooks for easy understanding and reproducibility.
+
 
 ## Requirements
 
