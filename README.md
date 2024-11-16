@@ -1,44 +1,56 @@
 # Photometric Redshifts Estimation
 
-This project focuses on estimating photometric redshifts.
 ## Project Overview
 
-Photometric redshift estimation is essential for understanding the universe's large-scale structure and distribution of galaxies. Gaussian processes offer a flexible, non-parametric approach to model the uncertainties inherent in photometric data, while additional data analysis techniques enhance accuracy and performance. This project explores and implements these methods, providing a comprehensive framework for photometric redshift estimation.
+This project focuses on estimating photometric redshifts, which are crucial for studying the large-scale structure of the universe and the distribution of galaxies. It employs Gaussian processes as a flexible non-parametric approach to effectively model uncertainties in photometric data. The project also integrates various data analysis techniques to enhance accuracy and performance, offering a comprehensive framework for photometric redshift estimation.
 
 ## Features
 
-- **Gaussian Process Regression**: Implements Gaussian processes to estimate redshifts with quantifiable uncertainties.
-- **Data Handling and Preprocessing**: Includes methods to clean and prepare synthetic datasets based on SDSS.
-- **Multiple Data Analysis Techniques**: Combines Gaussian processes with other statistical and machine learning methods to optimize predictions.
-- **Visualization**: Tools to visualize redshift distributions, error margins, and model performance.
-- **Documentation and Tutorials**: Detailed explanations and example notebooks for ease of understanding and reproducibility.
+- **Gaussian Process Regression**: Leverage Gaussian processes to estimate redshifts, allowing for a quantifiable measure of uncertainties.
+- **Data Handling and Preprocessing**: Tools for cleaning and preparing synthetic datasets based on the Sloan Digital Sky Survey (SDSS).
+- **Advanced Data Analysis**: Combines Gaussian processes with other statistical and machine learning techniques to enhance predictive power.
+- **Visualization Tools**: Includes tools for visualizing redshift distributions, error margins, and overall model performance.
+- **Thorough Documentation**: Detailed explanations and example notebooks for easy understanding and reproducibility.
 
 ## Requirements
 
-- Python 3.8+
-- Key packages: NumPy, Pandas, SciPy, Scikit-Learn, Matplotlib, and GPflow
+- **Python Version**: Python 3.8+
+- **Key Packages**: NumPy, Pandas, SciPy, Scikit-Learn, Matplotlib, GPflow
 
 ## Getting Started
 
-1. **Clone the repository**:
+1. **Clone the Repository**
    ```bash
-   git clone https://github.com/yourusername/photometric-redshifts.git
+   git clone https://github.com/Adrita-Khan/AstroPhotoZ.git
    ```
-2. **Install required packages**:
+2. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
    ```
-3. **Run example notebooks**: Start with `Photometric_Redshift_Estimation.ipynb` for a step-by-step guide.
+3. **Run Example Notebooks**
+   Start with `Photometric_Redshift_Estimation.ipynb` for a step-by-step guide.
 
 ## Usage
 
-Follow the example notebooks to apply Gaussian processes and other data analysis techniques to photometric data. Customize hyperparameters and methods as per your research requirements.
+Follow the example notebooks to apply Gaussian processes and other data analysis techniques to photometric data. Hyperparameters and methods can be adjusted to fit specific research requirements.
 
-## Contributions
+## Contributing
 
-Contributions are welcome! Feel free to open issues, suggest improvements, or create pull requests.
+Contributions are welcome! Please feel free to open issues, suggest improvements, or submit pull requests.
 
 ## License
 
 This project is licensed under the MIT License.
 
+## Resources
+
+- [Scikit-Learn Astronomy Regression Tutorial](https://ogrisel.github.io/scikit-learn.org/sklearn-tutorial/tutorial/astronomy/regression.html)
+- [Photo-z Regression Demo - Mofokeng Chaka](https://github.com/mofokeng-chaka/Classification-Photo-z_Regression_Demo)
+- [Multi-Wavelength Classification and Regression](https://github.com/mofokeng-chaka/Classification-Photo-z_Regression_Demo/blob/master/Multi-Wavelength_Classification_and_Regression.ipynb)
+- [PhotoZ_SDSS by Tasos Theodoropoulos](https://github.com/TasosTheodoropoulos/Photoz_SDSS)
+- [TITAN Project - PhotoZ SDSS ML](https://github.com/TITAN-Project-EU/PhotoZ_SDSS_ML)
+- [Photometric Redshifts - Martian Side of the Moon](https://github.com/martiansideofthemoon/Photometric-Redshifts)
+- [AstroML - Forest Photometric Redshift Estimation](https://www.astroml.org/book_figures/chapter9/fig_photoz_forest.html)
+- [Photometric Redshift Estimation - Amber](https://github.com/AstronomerAmber/Machine-Learning)
+- [Photometric Redshift Estimation by Qbeer](https://qbeer.github.io/photometric-redshift-estimation/)
+- [MLZ: Machine Learning Redshifts](https://github.com/mgckind/MLZ)
