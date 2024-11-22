@@ -52,8 +52,23 @@ Including these columns can help link the redshift estimation and evaluation to 
 3. **XRAY_RA, XRAY_DEC**: Celestial coordinates of the object.
 4. **XRAY_RA_DEC_ERR**: Error margin in the positional data.
 
-These columns collectively support the analysis of redshift estimates and model performance for celestial objects. Let me know if you'd like to extract or analyze these specifically!
 
+For estimating photometric redshifts and evaluating the model accuracy:
+### Key Columns for Redshift Estimation:
+1. **Photoz-related columns** (e.g., `PHOTOZ`, `PHOTOZ_BEST68_LOW`, `PHOTOZ_BEST68_HIGH`, `PHOTOZ_ML`, `PHOTOZ_ML68_LOW`, `PHOTOZ_ML68_HIGH`) - For predicted photometric redshift and its uncertainty.
+2. **z-related columns** (e.g., `z_best_brown_24_8`, `z_best_low_brown_24_8`, `z_best_high_brown_24_8`) - Alternative redshift estimations and bounds.
+3. **Observed photometric magnitudes**:
+   - `U`, `G`, `R`, `I`, `Z` (optical bands).
+   - `J`, `H`, `K` (near-infrared bands).
+   - `CH1_SPIES`, `CH2_SPIES`, `W1`, `W2` (mid-infrared bands).
+4. **Magnitude errors** (e.g., `UERR`, `GERR`, `RERR`, `IERR`, `ZERR`).
+
+### Key Columns for Model Evaluation:
+1. **True redshift** (`REDSHIFT`, `REDSHIFT_ERR`) - For comparing predicted redshift to spectroscopic redshift.
+2. **Chi-squared values** (`CHI_BEST`, `CHI_SEC`) - To evaluate model fit quality.
+3. **Model-related columns**:
+   - `MOD_BEST`, `MOD_SEC` (Best and secondary model indices).
+   - `PDZ_BEST`, `PDZ_SEC` (Probability density of the redshift).
 
 
 
