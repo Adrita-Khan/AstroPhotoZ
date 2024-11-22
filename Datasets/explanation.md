@@ -73,4 +73,42 @@ For estimating photometric redshifts and evaluating the model accuracy:
 
 
 
+### Key Columns:
+1. **PHOTOZ**: Primary photometric redshift estimate.
+2. **PHOTOZ_BEST68_LOW**: Lower bound of the 68% confidence interval for the photometric redshift.
+3. **PHOTOZ_BEST68_HIGH**: Upper bound of the 68% confidence interval for the photometric redshift.
+4. **PHOTOZ_ML**: Machine learning-based photometric redshift estimate.
+5. **PHOTOZ_ML68_LOW**: Lower bound of the 68% confidence interval for ML-based photometric redshift.
+6. **PHOTOZ_ML68_HIGH**: Upper bound of the 68% confidence interval for ML-based photometric redshift.
+7. **CHI_BEST**: Chi-square value for the best-fitting model.
+8. **MOD_BEST**: Model index of the best-fitting model.
+9. **EXTLAW_BEST**: Extinction law used for the best-fitting model.
+10. **EBV_BEST**: Best-fitting reddening value (E(B-V)).
+11. **PDZ_BEST**: Probability density for the best-fitting photo-z estimate.
+12. **PHOTOZ_SEC**: Secondary photometric redshift estimate.
+13. **CHI_SEC**: Chi-square value for the secondary model.
+14. **MOD_SEC**: Model index for the secondary fit.
+15. **PDZ_SEC**: Probability density for the secondary photo-z estimate.
+
+### Supporting Photometric Data:
+1. **U, G, R, I, Z**: Magnitudes in the SDSS filters.
+2. **UERR, GERR, RERR, IERR, ZERR**: Errors associated with the magnitudes.
+3. **J, H, K**: Near-infrared magnitudes.
+4. **JERR, HERR, KERR**: Errors in near-infrared magnitudes.
+5. **CH1_SPIES, CH2_SPIES**: Spitzer IRAC channel 1 and channel 2 magnitudes.
+6. **CH1ERR_SPIES, CH2ERR_SPIES**: Errors in Spitzer IRAC channel 1 and channel 2 magnitudes.
+7. **W1, W2, W3, W4**: WISE magnitudes for the four bands.
+8. **W1ERR, W2ERR, W3ERR, W4ERR**: Errors associated with WISE magnitudes.
+
+### Additional Metadata:
+1. **LUMINOSITY_DISTANCE_PHOT**: Luminosity distance derived from photo-z.
+2. **LUMINOSITY_PHOT**: Luminosity derived from photometric redshift.
+3. **REDSHIFT_SOURCE**: Source of the redshift estimate (e.g., photometric, spectroscopic).
+4. **SED_NAME**: Spectral energy distribution (SED) model name.
+
+
+
+
+
+
 
