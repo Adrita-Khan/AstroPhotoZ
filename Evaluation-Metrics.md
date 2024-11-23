@@ -1,17 +1,21 @@
+## Metrics
 
-**Metrics**
+Each metric aligns with standard practices for evaluating machine learning models, providing a comprehensive analysis of performance:
 
-Here’s how each metric aligns with standard practices for evaluating machine learning models:  
+1. **MSE (Mean Squared Error)**  
+   Measures the average squared difference between predicted and actual values. A standard loss function to evaluate prediction accuracy.
 
-1. **MSE (Mean Squared Error)**: A standard loss function commonly used to evaluate prediction accuracy. It measures the average squared difference between predicted and actual values.
+2. **MAE (Mean Absolute Error)**  
+   Calculates the average absolute difference between predicted and actual values. Less sensitive to outliers compared to MSE.
 
-2. **MAE (Mean Absolute Error)**: Complementary to MSE, this metric measures the average absolute difference between predicted and actual values. It is less sensitive to outliers compared to MSE.
+3. **\( R^2 \) (Coefficient of Determination)**  
+   Evaluates how well the model explains the variance in the data. A critical metric for assessing the goodness of fit.
 
-3. **\( R^2 \) (Coefficient of Determination)**: Assesses how well the model explains the variance in the data. It is a critical metric for evaluating the goodness of fit.
+4. **Bias**  
+   Indicates systematic errors in predictions. A lower bias suggests the model makes consistent predictions without significant systematic shifts.
 
-4. **Bias**: Reflects systematic errors in predictions. A lower bias indicates the model makes consistent predictions without systematic shifts.
+5. **Precision**  
+   In regression tasks, this refers to the model's ability to tightly group predictions around the true values, indicating low variability in repeated predictions.
 
-5. **Precision**: In regression tasks, precision often refers to the variability in repeated predictions or the model's ability to tightly group results around the true values.
-
-6. **Catastrophic Outlier Fraction**: Measures the proportion of predictions that significantly deviate from the true values. This metric is especially important in astrophysics, where outliers can mislead scientific interpretations.
-
+6. **Catastrophic Outlier Fraction**  
+   Represents the proportion of predictions that deviate significantly from the true values. Especially important in domains like astrophysics, where outliers can skew scientific interpretations.
