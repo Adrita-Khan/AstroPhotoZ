@@ -36,7 +36,7 @@ This project focuses on estimating photometric redshifts, which are crucial for 
    pip install -r requirements.txt
    ```
 3. **Run Example Notebooks**
-   Start with `Photometric_Redshift_Estimation.ipynb` for a step-by-step guide.
+   Start with `Simulated Data Analysis/Notebooks/Synthetic_Photometric_Redshift_Predictor.ipynb` for a step-by-step guide.
 
 ## Usage
 
