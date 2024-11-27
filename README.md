@@ -104,4 +104,9 @@ This project is licensed under the MIT License.
 - [Understanding Redshift - Sky at Night Magazine](https://www.skyatnightmagazine.com/space-science/redshift): A detailed article explaining the concept of redshift, its significance in astronomy, and its applications in understanding the universe.
 - [Hubble Law Introduction](https://astro.wku.edu/astr106/Hubble_intro.html): An introductory resource on Hubble's Law and its implications in cosmology.
 
+<h2><u>Contact</u></h2>
+For any inquiries or feedback, please contact:
 
+
+**Adrita Khan**  
+*[📧 Email](mailto:adrita.khan.official@gmail.com) | [🔗 LinkedIn](https://www.linkedin.com/in/adrita-khan) | [🐦 Twitter](https://x.com/Adrita_)*
