@@ -18,7 +18,13 @@ This project focuses on estimating photometric redshifts, which are crucial for 
 - **Visualization Tools**: Includes tools for visualizing redshift distributions, error margins, and overall model performance.
 - **Thorough Documentation**: Detailed explanations and example notebooks for easy understanding and reproducibility.
 
+
+
 ![Photometric Redshift vs True Redshift](Assets/Color-plot-for-photometric-redshift-estimation-vs-true-redshift-for-the-galaxy-catalog_W640.jpg)
+
+
+![Hubble Law Animation](https://astro.wku.edu/astr106/Hubble_law_anim.gif)
+
 ## Requirements
 
 - **Python Version**: Python 3.8+  
