@@ -49,6 +49,7 @@ This project is licensed under the MIT License.
 
 ## Resources
 
+### Tutorials and Demos
 - [Scikit-Learn Astronomy Regression Tutorial](https://ogrisel.github.io/scikit-learn.org/sklearn-tutorial/tutorial/astronomy/regression.html)
 - [Photo-z Regression Demo - Mofokeng Chaka](https://github.com/mofokeng-chaka/Classification-Photo-z_Regression_Demo)
 - [Multi-Wavelength Classification and Regression](https://github.com/mofokeng-chaka/Classification-Photo-z_Regression_Demo/blob/master/Multi-Wavelength_Classification_and_Regression.ipynb)
@@ -59,3 +60,22 @@ This project is licensed under the MIT License.
 - [Photometric Redshift Estimation - Amber](https://github.com/AstronomerAmber/Machine-Learning)
 - [Photometric Redshift Estimation by Qbeer](https://qbeer.github.io/photometric-redshift-estimation/)
 - [MLZ: Machine Learning Redshifts](https://github.com/mgckind/MLZ)
+
+### AstroML Resources
+- [Photo-z using k-Nearest Neighbors](https://www.astroml.org/examples/learning/plot_neighbors_photoz.html)
+- [Compute SDSS PCA](https://www.astroml.org/examples/datasets/compute_sdss_pca.html)
+
+### Deep Learning
+- [Photometric Redshift Using Deep Learning - Shreever Shith](https://github.com/shreevershith/EstimationOfPhotometricRedshiftUsingDL)
+
+### SDSS Data and Tools
+- [SDSS4 DR16Q Tutorial by Qiaoya Wu](https://github.com/QiaoyaWu/sdss4_dr16q_tutorial)
+- [SDSS DR8 Data Access](https://www.sdss3.org/dr8/data_access.php)
+- [SDSS DR9 Photo-z Algorithms](https://www.sdss3.org/dr9/algorithms/photo-z.php)
+- [SDSS DR17 Photo-z Algorithms](https://www.sdss4.org/dr17/algorithms/photo-z/)
+- [sdss Python Package](https://pypi.org/project/sdss/)
+- [Astroquery SDSS Documentation](https://astroquery.readthedocs.io/en/latest/sdss/sdss.html)
+- [Astroquery SDSS API](https://astroquery.readthedocs.io/en/latest/api/astroquery.sdss.SDSSClass.html)
+
+### Additional Resources
+- [SDSS DR17 Algorithms - Photo-z](https://www.sdss4.org/dr17/algorithms/photo-z/?utm_source=chatgpt.com)
