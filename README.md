@@ -8,7 +8,7 @@
 
 This project focuses on estimating photometric redshifts, which are crucial for studying the large-scale structure of the universe and the distribution of galaxies. It employs Gaussian processes as a flexible non-parametric approach to effectively model uncertainties in photometric data. The project also integrates various data analysis techniques to enhance accuracy and performance, offering a comprehensive framework for photometric redshift estimation and other ML and AI methods, benchmarking between them to observe each method's performance in terms of accuracy and computational time.
 
-![Photometric Redshift vs True Redshift](https://www.researchgate.net/profile/William-Hanlon-3/publication/51942136/figure/fig3/AS:305741194907651@1449905789809/Color-plot-for-photometric-redshift-estimation-vs-true-redshift-for-the-galaxy-catalog_W640.jpg)
+![Photometric Redshift vs True Redshift](Assets/Color-plot-for-photometric-redshift-estimation-vs-true-redshift-for-the-galaxy-catalog_W640.jpg)
 
 
 ## Features
