@@ -21,8 +21,13 @@ This project focuses on estimating photometric redshifts, which are crucial for 
 ![Photometric Redshift vs True Redshift](Assets/Color-plot-for-photometric-redshift-estimation-vs-true-redshift-for-the-galaxy-catalog_W640.jpg)
 ## Requirements
 
-- **Python Version**: Python 3.8+
-- **Key Packages**: NumPy, Pandas, SciPy, Scikit-Learn, Matplotlib, GPflow
+- **Python Version**: Python 3.8+  
+- **Key Packages**:  
+  - **Core Scientific Libraries**: NumPy, Pandas, SciPy  
+  - **Machine Learning and Statistical Modeling**: Scikit-Learn, GPflow  
+  - **Visualization Tools**: Matplotlib, Seaborn  
+  - **Astronomy-Specific Tools**: Astroquery, Astropy  
+  - **Deep Learning (Optional)**: TensorFlow  
 
 ## Getting Started
 
