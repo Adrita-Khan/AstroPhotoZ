@@ -94,7 +94,6 @@ This project is licensed under the MIT License.
 - [SDSS DR18 SkyServer SQL Search](https://skyserver.sdss.org/dr18/en/tools/search/sql.aspx)
 
 ### Additional Resources
-- [SDSS DR17 Algorithms - Photo-z](https://www.sdss4.org/dr17/algorithms/photo-z/?utm_source=chatgpt.com)
 
 - [SDSS DR17 Algorithms - Photo-z](https://www.sdss4.org/dr17/algorithms/photo-z/?utm_source=chatgpt.com): A comprehensive guide to the photometric redshift algorithms used in SDSS DR17.
 - [The Dark Energy Survey Data Management System](https://www.researchgate.net/publication/51942136_The_Dark_Energy_Survey_Data_Management_System/figures?lo=1): Explore figures and insights from the Dark Energy Survey, focusing on data management and redshift estimation techniques.
