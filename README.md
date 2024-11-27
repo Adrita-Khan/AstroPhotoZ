@@ -49,9 +49,9 @@ This project focuses on estimating photometric redshifts, which are crucial for 
 3. **Run Example Notebooks**
 
 To help you get started with the project, you can run the following example notebooks:
-
-1. [`Synthetic_Photometric_Redshift_Predictor.ipynb`](Simulated%20Data%20Analysis/Notebooks/Synthetic_Photometric_Redshift_Predictor.ipynb): A step-by-step guide to predicting photometric redshifts using synthetic data.
-2. [`Sample_Galaxy_Redshift_Prediction_py.ipynb`](Redshift_Analysis/Sample_Galaxy_Redshift_Prediction_py.ipynb): An example notebook for predicting galaxy redshifts using real data.
+1. [`Photometric_Redshift_Dataset_Exploration.ipynb`](EDA/Photometric_Redshift_Dataset_Exploration.ipynb): An exploratory analysis of the photometric redshift dataset to understand underlying patterns and features.
+2. [`Synthetic_Photometric_Redshift_Predictor.ipynb`](Simulated%20Data%20Analysis/Notebooks/Synthetic_Photometric_Redshift_Predictor.ipynb): A step-by-step guide to predicting photometric redshifts using synthetic data.
+3. [`Sample_Galaxy_Redshift_Prediction_py.ipynb`](Redshift_Analysis/Sample_Galaxy_Redshift_Prediction_py.ipynb): An example notebook for predicting galaxy redshifts using real data.
 
 
 ## Usage
