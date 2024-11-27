@@ -46,8 +46,7 @@ This project focuses on estimating photometric redshifts, which are crucial for 
 
 ## Usage
 
-Follow the example notebooks to apply Gaussian processes and other data analysis techniques to photometric data. Hyperparameters and methods can be adjusted to fit specific research requirements.
-
+Follow the notebooks to apply Gaussian processes (notebooks and scripts will be updated and shared as the work progresses) and other data analysis techniques to photometric data. Hyperparameters and methods can be adjusted to suit specific research requirements.
 ## Contributing
 
 Contributions are welcome! Please feel free to open issues, suggest improvements, or submit pull requests.
