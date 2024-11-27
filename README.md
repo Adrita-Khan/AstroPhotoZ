@@ -27,7 +27,8 @@ This project focuses on estimating photometric redshifts, which are crucial for 
   - **Machine Learning and Statistical Modeling**: Scikit-Learn, GPflow  
   - **Visualization Tools**: Matplotlib, Seaborn  
   - **Astronomy-Specific Tools**: Astroquery, Astropy  
-  - **Deep Learning (Optional)**: TensorFlow  
+  - **Deep Learning (Optional)**: TensorFlow
+  - **Utilities**: tqdm, h5py
 
 ## Getting Started
 
