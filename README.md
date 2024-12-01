@@ -10,6 +10,11 @@ This project focuses on estimating photometric redshifts, which are crucial for 
 
 ![Galaxy Redshift](https://c02.purpledshub.com/uploads/sites/48/2020/04/Galaxy-Red-Shift-0fbfa50.jpg?webp=1&w=1200)
 
+
+## Aim
+
+The project aims to test existing methodologies, such as Gaussian processes, to calculate photometric redshifts and mass estimates on a dataset with known redshifts, like Stripe 82X, to validate and benchmark the approach. The results will then be reproduced using the older dataset to ensure consistency and accuracy, demonstrating alignment with published data. Once validated, the methodology will be adapted and applied to other wide X-ray fields with incomplete redshift data, such as XMM XXL, while addressing challenges posed by inhomogeneous data coverage. The performance of the approach will be evaluated across datasets with varying depths and completeness to optimize its reliability for diverse datasets. Finally, the methodology will be scaled for fields with no redshifts, enabling broader application in X-ray AGN studies and mass estimation while leveraging advanced machine learning techniques.
+
 ## Features
 
 - **Gaussian Process Regression**: Leverage Gaussian processes to estimate redshifts, allowing for a quantifiable measure of uncertainties.
