@@ -108,6 +108,7 @@ This project is licensed under the MIT License.
 - [The Dark Energy Survey Data Management System](https://www.researchgate.net/publication/51942136_The_Dark_Energy_Survey_Data_Management_System/figures?lo=1): Explore figures and insights from the Dark Energy Survey, focusing on data management and redshift estimation techniques.
 - [Understanding Redshift - Sky at Night Magazine](https://www.skyatnightmagazine.com/space-science/redshift): A detailed article explaining the concept of redshift, its significance in astronomy, and its applications in understanding the universe.
 - [Hubble Law Introduction](https://astro.wku.edu/astr106/Hubble_intro.html): An introductory resource on Hubble's Law and its implications in cosmology.
+- https://arxiv.org/pdf/0910.4393
 
 ---
 
