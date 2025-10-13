@@ -12,17 +12,13 @@ This repository presents a comprehensive framework for photometric redshift esti
 
 ## Research Objectives
 
-This investigation pursues a systematic approach to photometric redshift estimation through the following objectives:
-
-1. **Methodology Validation**: Implement and validate Gaussian Process Regression and complementary machine learning techniques using spectroscopically confirmed samples from the Stripe 82X survey, establishing baseline performance metrics for subsequent applications.
-
-2. **Reproducibility Assessment**: Apply the validated methodology to legacy datasets to demonstrate consistency with previously published photometric redshift catalogs, ensuring algorithmic robustness and reproducibility.
-
-3. **Extension to Sparse Datasets**: Adapt the framework for wide-field X-ray surveys with incomplete spectroscopic coverage, including XMM-XXL, while developing strategies to address inhomogeneous spatial and wavelength coverage.
-
-4. **Multi-Survey Performance Evaluation**: Conduct comparative analysis across surveys of varying depth and completeness to assess methodology scalability and identify optimal application domains.
-
-5. **Application to Uncharacterized Fields**: Deploy the methodology to X-ray selected Active Galactic Nuclei samples lacking spectroscopic redshifts, enabling mass estimation and large-scale structure studies through advanced machine learning techniques.
+| Phase | Objective | Description |
+|-------|-----------|-------------|
+| **1** | **Methodology Validation** | Implement and validate Gaussian Process Regression and complementary machine learning techniques using spectroscopically confirmed samples from the Stripe 82X survey, establishing baseline performance metrics for subsequent applications. |
+| **2** | **Reproducibility Assessment** | Apply the validated methodology to legacy datasets to demonstrate consistency with previously published photometric redshift catalogs, ensuring algorithmic robustness and reproducibility. |
+| **3** | **Extension to Sparse Datasets** | Adapt the framework for wide-field X-ray surveys with incomplete spectroscopic coverage, including XMM-XXL, while developing strategies to address inhomogeneous spatial and wavelength coverage. |
+| **4** | **Multi-Survey Performance Evaluation** | Conduct comparative analysis across surveys of varying depth and completeness to assess methodology scalability and identify optimal application domains. |
+| **5** | **Application to Uncharacterized Fields** | Deploy the methodology to X-ray selected Active Galactic Nuclei samples lacking spectroscopic redshifts, enabling mass estimation and large-scale structure studies through advanced machine learning techniques. |
 
 ## Methodology
 
@@ -45,14 +41,23 @@ The framework incorporates comprehensive data preprocessing capabilities includi
 
 ### Comparative Machine Learning Analysis
 
-Multiple regression algorithms are implemented and benchmarked, including:
+Multiple regression algorithms are implemented and benchmarked according to the following framework:
 
-- Gaussian Process Regression (primary method)
-- Random Forest Regression
-- Gradient Boosting Machines
-- Neural Network architectures (optional)
+| Algorithm | Primary Strengths | Computational Complexity |
+|-----------|------------------|-------------------------|
+| **Gaussian Process Regression** | Uncertainty quantification, non-parametric flexibility | O(n³) training, O(n²) prediction |
+| **Random Forest Regression** | Robust to outliers, handles high-dimensional data | O(n log n × trees) |
+| **Gradient Boosting Machines** | High accuracy, feature importance ranking | O(n × trees × depth) |
+| **Neural Networks** | Complex pattern recognition, scalability | Variable (architecture-dependent) |
 
-Performance is evaluated using standard metrics: root-mean-square error (RMSE), normalized median absolute deviation (σ<sub>NMAD</sub>), outlier fraction, and computational runtime.
+**Performance Metrics:**
+
+| Metric | Definition | Interpretation |
+|--------|------------|----------------|
+| **RMSE** | Root Mean Square Error | Overall prediction accuracy |
+| **σ<sub>NMAD</sub>** | Normalized Median Absolute Deviation | Robust scatter estimate |
+| **Outlier Fraction** | |Δz| > 0.15 × (1 + z<sub>spec</sub>) | Catastrophic failure rate |
+| **Computational Runtime** | Wall-clock time for training/prediction | Scalability assessment |
 
 ### Visualization and Diagnostic Tools
 
@@ -71,34 +76,56 @@ The repository includes publication-quality visualization utilities for:
 
 ### System Requirements
 
-- **Python**: Version 3.8 or higher
-- **Operating System**: Platform-independent (Linux, macOS, Windows)
+| Component | Requirement |
+|-----------|-------------|
+| **Python Version** | 3.8 or higher |
+| **Operating System** | Platform-independent (Linux, macOS, Windows) |
+| **Memory** | Minimum 8 GB RAM recommended for large datasets |
+| **Storage** | Varies by dataset size (typically 1–10 GB) |
 
 ### Dependencies
 
 #### Core Scientific Computing
-- NumPy: Numerical array operations
-- Pandas: Tabular data manipulation
-- SciPy: Scientific computing routines
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| NumPy | Latest stable | Numerical array operations |
+| Pandas | Latest stable | Tabular data manipulation |
+| SciPy | Latest stable | Scientific computing routines |
 
 #### Machine Learning and Statistical Modeling
-- Scikit-Learn: Classical machine learning algorithms
-- GPflow: Gaussian Process modeling with TensorFlow backend
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| Scikit-Learn | Latest stable | Classical machine learning algorithms |
+| GPflow | Latest stable | Gaussian Process modeling with TensorFlow backend |
 
 #### Visualization
-- Matplotlib: Static plotting library
-- Seaborn: Statistical data visualization
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| Matplotlib | Latest stable | Static plotting library |
+| Seaborn | Latest stable | Statistical data visualization |
 
 #### Astronomical Data Handling
-- Astroquery: Astronomical database query interface
-- Astropy: Core astronomy data structures and utilities
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| Astroquery | Latest stable | Astronomical database query interface |
+| Astropy | Latest stable | Core astronomy data structures and utilities |
 
 #### Deep Learning (Optional)
-- TensorFlow: Neural network implementations
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| TensorFlow | 2.x | Neural network implementations |
 
 #### Utilities
-- tqdm: Progress monitoring
-- h5py: HDF5 data format support
+
+| Package | Version | Purpose |
+|---------|---------|---------|
+| tqdm | Latest stable | Progress monitoring |
+| h5py | Latest stable | HDF5 data format support |
 
 ## Installation and Setup
 
@@ -117,13 +144,11 @@ pip install -r requirements.txt
 
 ### Jupyter Notebook Examples
 
-The repository includes comprehensive Jupyter notebooks demonstrating key functionality:
-
-1. **Exploratory Data Analysis**: [`Photometric_Redshift_Dataset_Exploration.ipynb`](EDA/Photometric_Redshift_Dataset_Exploration.ipynb) — Statistical characterization and visualization of photometric redshift training datasets.
-
-2. **Synthetic Data Validation**: [`Synthetic_Photometric_Redshift_Predictor.ipynb`](Simulated%20Data%20Analysis/Notebooks/Synthetic_Photometric_Redshift_Predictor.ipynb) — Methodology validation using simulated photometric observations with known redshift distributions.
-
-3. **Observational Data Application**: [`Sample_Galaxy_Redshift_Prediction_py.ipynb`](Redshift_Analysis/Sample_Galaxy_Redshift_Prediction_py.ipynb) — End-to-end pipeline demonstration using real astronomical survey data.
+| Notebook | Purpose | Location |
+|----------|---------|----------|
+| **Exploratory Data Analysis** | Statistical characterization and visualization of photometric redshift training datasets | [`Photometric_Redshift_Dataset_Exploration.ipynb`](EDA/Photometric_Redshift_Dataset_Exploration.ipynb) |
+| **Synthetic Data Validation** | Methodology validation using simulated photometric observations with known redshift distributions | [`Synthetic_Photometric_Redshift_Predictor.ipynb`](Simulated%20Data%20Analysis/Notebooks/Synthetic_Photometric_Redshift_Predictor.ipynb) |
+| **Observational Data Application** | End-to-end pipeline demonstration using real astronomical survey data | [`Sample_Galaxy_Redshift_Prediction_py.ipynb`](Redshift_Analysis/Sample_Galaxy_Redshift_Prediction_py.ipynb) |
 
 ## Usage Guidelines
 
@@ -141,42 +166,61 @@ This software is distributed under the MIT License, permitting unrestricted use,
 
 ### Methodological Tutorials
 
-- Scikit-Learn Astronomy Regression Tutorial: [Link](https://ogrisel.github.io/scikit-learn.org/sklearn-tutorial/tutorial/astronomy/regression.html)
-- Classification and Photo-z Regression Demonstrations (Mofokeng Chaka): [Repository](https://github.com/mofokeng-chaka/Classification-Photo-z_Regression_Demo)
-- Multi-Wavelength Classification and Regression: [Notebook](https://github.com/mofokeng-chaka/Classification-Photo-z_Regression_Demo/blob/master/Multi-Wavelength_Classification_and_Regression.ipynb)
-- SDSS Photometric Redshift Analysis (Tasos Theodoropoulos): [Repository](https://github.com/TasosTheodoropoulos/Photoz_SDSS)
-- TITAN Project PhotoZ Implementation: [Repository](https://github.com/TITAN-Project-EU/PhotoZ_SDSS_ML)
-- Photometric Redshifts Analysis: [Repository](https://github.com/martiansideofthemoon/Photometric-Redshifts)
+| Resource | Author/Organization | Description |
+|----------|-------------------|-------------|
+| [Scikit-Learn Astronomy Regression Tutorial](https://ogrisel.github.io/scikit-learn.org/sklearn-tutorial/tutorial/astronomy/regression.html) | Scikit-Learn | Introduction to regression techniques for astronomical data |
+| [Classification and Photo-z Regression Demo](https://github.com/mofokeng-chaka/Classification-Photo-z_Regression_Demo) | Mofokeng Chaka | Demonstrations of classification and regression methods |
+| [Multi-Wavelength Classification and Regression](https://github.com/mofokeng-chaka/Classification-Photo-z_Regression_Demo/blob/master/Multi-Wavelength_Classification_and_Regression.ipynb) | Mofokeng Chaka | Multi-wavelength analysis techniques |
+| [PhotoZ_SDSS](https://github.com/TasosTheodoropoulos/Photoz_SDSS) | Tasos Theodoropoulos | SDSS photometric redshift implementations |
+| [TITAN Project PhotoZ](https://github.com/TITAN-Project-EU/PhotoZ_SDSS_ML) | TITAN Project EU | Machine learning approaches to SDSS photo-z |
+| [Photometric Redshifts Analysis](https://github.com/martiansideofthemoon/Photometric-Redshifts) | Martian Side of the Moon | Comprehensive photo-z analysis framework |
 
 ### AstroML Library Resources
 
-- AstroML Forest Regression Example: [Documentation](https://www.astroml.org/book_figures/chapter9/fig_photoz_forest.html)
-- k-Nearest Neighbors Photo-z Implementation: [Example](https://www.astroml.org/examples/learning/plot_neighbors_photoz.html)
-- SDSS Principal Component Analysis: [Example](https://www.astroml.org/examples/datasets/compute_sdss_pca.html)
+| Resource | Topic | Link |
+|----------|-------|------|
+| **Forest Regression Example** | Random forest photo-z estimation | [Documentation](https://www.astroml.org/book_figures/chapter9/fig_photoz_forest.html) |
+| **k-Nearest Neighbors** | KNN-based photo-z | [Example](https://www.astroml.org/examples/learning/plot_neighbors_photoz.html) |
+| **PCA Analysis** | Principal component analysis for SDSS | [Example](https://www.astroml.org/examples/datasets/compute_sdss_pca.html) |
 
 ### Advanced Machine Learning Implementations
 
-- Amber's Machine Learning Approaches: [Repository](https://github.com/AstronomerAmber/Machine-Learning)
-- Deep Learning for Photometric Redshifts (Shreever Shith): [Repository](https://github.com/shreevershith/EstimationOfPhotometricRedshiftUsingDL)
-- Photo-z Estimation Tutorial (Qbeer): [Website](https://qbeer.github.io/photometric-redshift-estimation/)
-- MLZ: Machine Learning for Redshifts: [Repository](https://github.com/mgckind/MLZ)
+| Repository | Author | Focus Area |
+|------------|--------|------------|
+| [Machine Learning Approaches](https://github.com/AstronomerAmber/Machine-Learning) | Amber | Various ML techniques for astronomy |
+| [Deep Learning for Photo-z](https://github.com/shreevershith/EstimationOfPhotometricRedshiftUsingDL) | Shreever Shith | Neural network architectures |
+| [Photo-z Estimation Tutorial](https://qbeer.github.io/photometric-redshift-estimation/) | Qbeer | Comprehensive tutorial |
+| [MLZ: Machine Learning for Redshifts](https://github.com/mgckind/MLZ) | Matias Carrasco Kind | Production-level ML framework |
 
 ### SDSS Data Access and Documentation
 
-- SDSS DR16Q Quasar Catalog Tutorial (Qiaoya Wu): [Repository](https://github.com/QiaoyaWu/sdss4_dr16q_tutorial)
-- SDSS Data Release 8 Data Access: [Portal](https://www.sdss3.org/dr8/data_access.php)
-- SDSS DR9 Photo-z Algorithms: [Documentation](https://www.sdss3.org/dr9/algorithms/photo-z.php)
-- SDSS DR17 Photo-z Algorithms: [Documentation](https://www.sdss4.org/dr17/algorithms/photo-z/)
-- SDSS Python Package: [PyPI](https://pypi.org/project/sdss/)
-- Astroquery SDSS Module: [Documentation](https://astroquery.readthedocs.io/en/latest/sdss/sdss.html) | [API Reference](https://astroquery.readthedocs.io/en/latest/api/astroquery.sdss.SDSSClass.html)
-- SDSS SkyServer SQL Interface: [DR14](https://skyserver.sdss.org/dr14/en/tools/search/sql.aspx) | [DR18](https://skyserver.sdss.org/dr18/en/tools/search/sql.aspx)
+#### Data Release Resources
+
+| Resource | Data Release | Type |
+|----------|-------------|------|
+| [DR16Q Tutorial](https://github.com/QiaoyaWu/sdss4_dr16q_tutorial) | DR16 | Quasar catalog tutorial |
+| [Data Access Portal](https://www.sdss3.org/dr8/data_access.php) | DR8 | Data download interface |
+| [Photo-z Algorithms](https://www.sdss3.org/dr9/algorithms/photo-z.php) | DR9 | Algorithm documentation |
+| [Photo-z Technical Docs](https://www.sdss4.org/dr17/algorithms/photo-z/) | DR17 | Updated methodology |
+| [SkyServer SQL Interface](https://skyserver.sdss.org/dr14/en/tools/search/sql.aspx) | DR14 | SQL query interface |
+| [SkyServer SQL Interface](https://skyserver.sdss.org/dr18/en/tools/search/sql.aspx) | DR18 | Latest SQL interface |
+
+#### Python Tools
+
+| Tool | Purpose | Link |
+|------|---------|------|
+| **sdss Package** | SDSS data access library | [PyPI](https://pypi.org/project/sdss/) |
+| **Astroquery.sdss** | Query interface for SDSS archives | [Documentation](https://astroquery.readthedocs.io/en/latest/sdss/sdss.html) |
+| **API Reference** | Detailed API documentation | [Reference](https://astroquery.readthedocs.io/en/latest/api/astroquery.sdss.SDSSClass.html) |
 
 ### Survey Documentation and Theoretical Background
 
-- SDSS DR17 Photometric Redshift Algorithms: [Technical Documentation](https://www.sdss4.org/dr17/algorithms/photo-z/)
-- Dark Energy Survey Data Management System: [Publication](https://www.researchgate.net/publication/51942136_The_Dark_Energy_Survey_Data_Management_System/figures?lo=1)
-- Redshift in Observational Cosmology: [Article](https://www.skyatnightmagazine.com/space-science/redshift)
-- Hubble's Law Introduction: [Educational Resource](https://astro.wku.edu/astr106/Hubble_intro.html)
+| Topic | Resource | Description |
+|-------|----------|-------------|
+| **SDSS Photo-z Algorithms** | [DR17 Documentation](https://www.sdss4.org/dr17/algorithms/photo-z/) | Technical specification of photometric redshift methodologies |
+| **Dark Energy Survey** | [DES Data Management](https://www.researchgate.net/publication/51942136_The_Dark_Energy_Survey_Data_Management_System/figures?lo=1) | Data processing and photo-z techniques |
+| **Redshift Theory** | [Sky at Night Magazine](https://www.skyatnightmagazine.com/space-science/redshift) | Observational cosmology fundamentals |
+| **Hubble's Law** | [Educational Resource](https://astro.wku.edu/astr106/Hubble_intro.html) | Introduction to distance-redshift relation |
 
 ---
 
